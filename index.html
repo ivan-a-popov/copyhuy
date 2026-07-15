@@ -219,7 +219,7 @@ footer a{color:inherit}
 	function setLang(l){
 		root.setAttribute('data-lang',l);
 		root.setAttribute('lang',l);
-		document.title=(l==='ru')?'копихуй: создавая свободу':'copyhuy to create freedom';
+		document.title=(l==='ru')?'копихуй: создание свободы':'copyhuy to create freedom';
 		buttons.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l));});
 	}
 	buttons.forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set);});});
